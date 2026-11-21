@@ -1,0 +1,109 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#08090d">
+  <title>My Ordinary Life — Personal Story</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Montserrat:wght@300;400;600;800;900&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <div class="grain"></div>
+  <div class="vignette"></div>
+
+  <header>
+    <div class="logo">MOL<span>.</span></div>
+    <div class="header-label">A PERSONAL STORY / 2026</div>
+    <button id="soundButton" class="sound-button">SOUND OFF</button>
+  </header>
+
+  <main>
+    <section class="intro" id="intro">
+      <div class="intro-background"></div>
+      <div class="intro-content">
+        <span class="eyebrow">AN EXPERIENCE THROUGH MY LIFE</span>
+        <h1>MY ORDINARY<br><span>LIFE.</span></h1>
+        <p>Some things are easier to feel than to explain.</p>
+        <button id="startButton" class="start-button">
+          <span>ENTER MY WORLD</span>
+          <span class="arrow">↗</span>
+        </button>
+        <div class="intro-bottom">HEADPHONES RECOMMENDED · 2026</div>
+      </div>
+      <div class="intro-number">01 — 05</div>
+    </section>
+
+    <section class="experience hidden" id="experience">
+      <div class="scene" id="scene">
+        <div class="light light-one"></div>
+        <div class="light light-two"></div>
+
+        <div class="scene-number" id="sceneNumber">01 / 05</div>
+
+        <div class="character" id="character">
+          <div class="head"></div>
+          <div class="body"></div>
+          <div class="arm arm-left"></div>
+          <div class="arm arm-right"></div>
+          <div class="leg leg-left"></div>
+          <div class="leg leg-right"></div>
+        </div>
+
+        <div class="scene-text">
+          <span class="chapter" id="chapter">CHAPTER 01 — THE BEGINNING</span>
+          <h2 id="bigText">OBSERVE.</h2>
+          <p id="description">
+            Sometimes, silence says more than words ever could.
+          </p>
+        </div>
+
+        <div class="scene-footer">
+          <span id="smallText">I WATCH. I THINK. I REMEMBER.</span>
+          <span class="scene-time" id="sceneTime">00:00</span>
+        </div>
+      </div>
+
+      <div class="lyrics-panel">
+        <div class="lyrics-heading">
+          <span>THE STORY</span>
+          <span id="chapterCounter">01 / 05</span>
+        </div>
+        <p id="lyricText" class="lyric-text">
+          Not every thought needs to be heard.
+        </p>
+        <div class="progress-track">
+          <div class="progress-fill" id="progressFill"></div>
+        </div>
+        <div class="music-controls">
+          <button id="playButton" class="control-button">▶ PLAY</button>
+          <label class="upload-button">
+            + ADD SONG
+            <input type="file" id="audioFile" accept="audio/*">
+          </label>
+          <span id="musicStatus">NO AUDIO LOADED</span>
+        </div>
+        <audio id="audio" preload="metadata"></audio>
+      </div>
+    </section>
+
+    <section class="ending hidden" id="ending">
+      <span class="eyebrow">END OF TRANSMISSION</span>
+      <h2>STILL<br><span>HERE.</span></h2>
+      <p>
+        I am not the person I was yesterday.<br>
+        And I am not yet the person I want to become.
+      </p>
+      <button id="replayButton" class="start-button">
+        EXPERIENCE AGAIN ↗
+      </button>
+      <div class="ending-footer">MY ORDINARY LIFE · PERSONAL ARCHIVE</div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
