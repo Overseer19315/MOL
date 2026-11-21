@@ -1,0 +1,210 @@
+
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#08090b">
+  <meta name="description" content="Un archivo personal. Una historia en movimiento.">
+  <title>MY ORDINARY LIFE — Private Archive</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="noise" aria-hidden="true"></div>
+  <div class="cursor-glow" aria-hidden="true"></div>
+
+  <main>
+    <section class="gate screen" id="gate">
+      <div class="gate-grid"></div>
+
+      <div class="gate-top mono">
+        <span>PERSONAL ARCHIVE</span>
+        <span>ACCESS NODE / 01</span>
+      </div>
+
+      <div class="gate-center">
+        <div class="seal"><span></span><span></span><span></span></div>
+
+        <p class="micro mono">THIS IS NOT A PUBLIC RECORD</p>
+
+        <h1>A LIFE<br><i>IN BETWEEN.</i></h1>
+
+        <p class="gate-copy">
+          Algunas cosas no se cuentan en voz alta.<br>
+          Se dejan aquí, para no olvidarlas.
+        </p>
+
+        <form id="loginForm" class="login-form" autocomplete="off">
+          <label class="field">
+            <span class="mono">IDENTIFICATION</span>
+            <input id="username" name="username" placeholder="USER" autocomplete="username" spellcheck="false" required>
+          </label>
+
+          <label class="field">
+            <span class="mono">ACCESS CODE</span>
+            <input id="password" name="password" type="password" placeholder="••••••" autocomplete="current-password" required>
+          </label>
+
+          <button class="enter-button" type="submit">
+            <span>UNLOCK ARCHIVE</span>
+            <b>↗</b>
+          </button>
+
+          <p id="loginError" class="login-error" role="alert"></p>
+        </form>
+      </div>
+
+      <div class="gate-bottom mono">
+        <span>PRIVATE / PERSONAL / UNFINISHED</span>
+        <span>EST. 22·03</span>
+      </div>
+    </section>
+
+    <section class="welcome screen is-hidden" id="welcome">
+      <div class="welcome-lines"></div>
+
+      <div class="welcome-inner">
+        <p class="micro mono">ACCESS GRANTED <span class="live-dot"></span></p>
+
+        <h2>WELCOME BACK,<br><i>COS.</i></h2>
+
+        <p class="welcome-copy">
+          No es un resumen de tu vida.<br>
+          Es una forma de mirar lo que has ido dejando por el camino.
+        </p>
+
+        <button class="begin-button" id="beginButton">
+          COMENZAR EXPERIENCIA <span>↓</span>
+        </button>
+
+        <p class="welcome-note mono">
+          MY ORDINARY LIFE / AN UNFINISHED DOCUMENT
+        </p>
+      </div>
+    </section>
+
+    <section class="story is-hidden" id="story">
+
+      <header class="story-header">
+        <a class="wordmark" href="#top">M<span>/</span>OL</a>
+
+        <div class="header-meta mono">
+          <span>PERSONAL ARCHIVE</span>
+          <span id="chapterMeta">01 — 07</span>
+        </div>
+
+        <button class="mute-button mono" id="muteButton" type="button">
+          SOUND ON
+        </button>
+      </header>
+
+      <div class="story-progress">
+        <div id="storyProgressFill"></div>
+      </div>
+
+      <div class="chapter-stage" id="chapterStage">
+
+        <div class="architecture">
+          <div class="arch arch-back"></div>
+          <div class="arch arch-front"></div>
+          <div class="floor-grid"></div>
+          <div class="light-beam"></div>
+          <div class="distant-window"><span></span></div>
+        </div>
+
+        <div class="chapter-index mono" id="chapterIndex">01 / 07</div>
+
+        <div class="chapter-content" id="chapterContent">
+          <p class="chapter-kicker mono" id="chapterKicker">
+            CHAPTER 01 / THE OBSERVER
+          </p>
+
+          <h2 id="chapterTitle">GUARDAR<br><i>Y OBSERVAR.</i></h2>
+
+          <p class="chapter-body" id="chapterBody">
+            A veces me resulta más fácil mirar, escuchar y entender en silencio.
+          </p>
+
+          <p class="chapter-foot mono" id="chapterFoot">
+            I NOTICE THE THINGS THAT GO UNSAID.
+          </p>
+        </div>
+
+        <div class="vertical-note mono" id="verticalNote">
+          PALMA / SOMEWHERE IN MY HEAD
+        </div>
+      </div>
+
+      <div class="story-lower">
+
+        <div class="lower-left">
+          <p class="mono section-label">A NOTE TO MYSELF</p>
+          <p class="note-line" id="noteLine">
+            No todo lo que callo significa que no tenga nada que decir.
+          </p>
+        </div>
+
+        <div class="lower-right">
+          <p class="mono song-label">SOUNDTRACK / THE LIVING TOMBSTONE</p>
+
+          <p class="song-name">
+            MY ORDINARY LIFE <span>— 2017</span>
+          </p>
+
+          <div class="player-frame">
+            <div id="youtubePlayer"></div>
+          </div>
+
+          <p class="player-hint mono">
+            REPRODUCCIÓN OFICIAL INTEGRADA · CONTROLES DE YOUTUBE
+          </p>
+        </div>
+
+      </div>
+
+      <nav class="chapter-nav">
+        <button id="previousButton" type="button" class="nav-button mono">
+          ← ANTERIOR
+        </button>
+
+        <div class="chapter-dots" id="chapterDots"></div>
+
+        <button id="nextButton" type="button" class="nav-button mono">
+          SIGUIENTE →
+        </button>
+      </nav>
+
+      <div class="end-screen is-hidden" id="endScreen">
+        <p class="mono micro">END OF ARCHIVE / NOT THE END OF THE STORY</p>
+
+        <h2>STILL<br><i>BECOMING.</i></h2>
+
+        <p>
+          No tengo que tenerlo todo resuelto a los trece.<br>
+          Solo tengo que seguir siendo honesto conmigo.
+        </p>
+
+        <button id="restartButton" class="begin-button">
+          VOLVER AL PRINCIPIO ↗
+        </button>
+      </div>
+
+    </section>
+  </main>
+
+  <footer class="site-footer mono">
+    <span>THIS ARCHIVE BELONGS TO ITS AUTHOR.</span>
+    <span>NO FINAL VERSION EXISTS.</span>
+  </footer>
+
+  <script src="https://www.youtube.com/iframe_api"></script>
+  <script src="script.js"></script>
+
+</body>
+</html>
